@@ -1,8 +1,8 @@
-body{
-	margin:0;
+body {
+	margin: 0;
 	padding: 0;
-	background-image: url('https://static.vecteezy.com/system/resources/previews/000/345/009/large_2x/abstract-tech-background-vector.jpg');
-	-webkit-background-size:cover;
+	background-image: url("https://static.vecteezy.com/system/resources/previews/000/345/009/large_2x/abstract-tech-background-vector.jpg");
+	-webkit-background-size: cover;
 	background-size: cover;
 	background-position: center center;
 	background-repeat: no-repeat;
@@ -10,30 +10,30 @@ body{
 	height: 100vh;
 }
 
-.wrapper{
+.wrapper {
 	position: absolute;
 	top: 30%;
 	left: 30%;
-	transform: :translate(-50%,-50%);
+	transform: translate(-50%, -50%);
 }
 
-.wrapper h2{
+.wrapper h2 {
 	padding: 0;
-	margin:0;
+	margin: 0;
 	color: #fff;
-	text-shadow: 0 2px 0 rgba(0,0,0,0.5);
+	text-shadow: 0 2px 0 rgba(0, 0, 0, 0.5);
 	font-size: 60px;
 }
 
-.wrapper p{
+.wrapper p {
 	color: #fff;
 	font-size: 18px;
-	margin:0;
+	margin: 0;
 	line-height: 35px;
 }
 
-.wrapper a{
-	background:crimson;
+.wrapper a {
+	background: crimson;
 	color: #fff;
 	text-decoration: none;
 	padding: 10px 25px;
@@ -42,25 +42,36 @@ body{
 	margin-top: 30px;
 }
 
-span:before{
-	content: '';
+span:before {
+	content: "";
 	animation: animate infinite 8s;
 }
 
-@keyframes animate{
-	20%{
-		content: 'Web Developer'
+@media (max-width: 600px) {
+	.wrapper {
+		top: 50%;
+		left: 50%;
 	}
-	40%{
-		content: 'App Developer'
+
+	.wrapper h2 {
+		font-size: 36px;
 	}
-	60%{
-		content: 'Web Designer'
+}
+
+@keyframes animate {
+	20% {
+		content: "Web Developer";
 	}
-	80%{
-		content: 'SEO'
+	40% {
+		content: "App Developer";
 	}
-	100%{
-		content: 'Programmer'
+	60% {
+		content: "Web Designer";
+	}
+	80% {
+		content: "SEO Expert";
+	}
+	100% {
+		content: "Programmer";
 	}
 }
